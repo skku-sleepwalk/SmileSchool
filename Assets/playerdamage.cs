@@ -1,33 +1,37 @@
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class playerdamage : MonoBehaviour
 {
-    public int maxHealth = 100;
-    public int currentHealth;
+    public int health = 5;
+    public Rigidbody2D rb;
+    public float location = 0;
+
 
     void Start()
     {
-        currentHealth = maxHealth;
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    // 데미지를 받는 함수
-    public void TakeDamage(int damage)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        currentHealth -= damage;
-
-        if (currentHealth <= 0)
+        Debug.Log("health: " + health);
+        if (collision.gameObject.CompareTag("monster")) ;
         {
-            currentHealth = 0;
-            Die();
+            health -= 1;
+            Debug.Log("health: " + health);
+
+
+            if (health <= 0) ;
+            {
+
+            }
+        }
+        void OnColisionExit2D(Collision2D colision)
+        {
+
         }
 
-        Debug.Log("플레이어 체력: " + currentHealth);
-    }
 
-    void Die()
-    {
-        Debug.Log("플레이어 사망");
-        // 여기서 게임 오버 처리하면 됨
-        // Destroy(gameObject);
     }
 }
+

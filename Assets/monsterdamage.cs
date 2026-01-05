@@ -3,16 +3,17 @@ using UnityEngine;
 public class EnemyDamage : MonoBehaviour
 {
     public int damage = 10;
+    public string name;
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+            playerdamage playerHealth = collision.gameObject.GetComponent<playerdamage>();
 
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(damage);
+                //playerHealth.TakeDamage(damage);
             }
         }
     }
