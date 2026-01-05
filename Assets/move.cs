@@ -9,7 +9,7 @@ public class move : MonoBehaviour
     float speed = 2;
     bool flip = false;
     Rigidbody2D rb2D;
-   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,14 +23,22 @@ public class move : MonoBehaviour
         y = 0;
         if (Input.GetKey("right"))
         {
-            rb2D.velocity = new Vector2(speed, 0);
+            x += speed;
         }
         else if (Input.GetKey("left"))
         {
-            rb2D.velocity = new Vector2(-speed, 0); ;
-        }
-    }
-       
-       
+            x -= speed;
 
+        }
+        /*
+        else if (Input.GetKey(KeyCode.Space))
+        {
+            rb2D.AddForce(new Vector2(0, 100));
+        }
+        */
+        rb2D.velocity = new Vector2(x, 0);
+
+
+
+    }
 }
