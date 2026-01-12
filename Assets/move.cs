@@ -6,7 +6,7 @@ public class move : MonoBehaviour
 {
     float x = 0;
     float y = 0;
-    float speed = 2;
+    public float speed = 5;
     bool flip = false;
     Rigidbody2D rb2D;
 
@@ -30,13 +30,10 @@ public class move : MonoBehaviour
             x -= speed;
 
         }
-        /*
-        else if (Input.GetKey(KeyCode.Space))
-        {
-            rb2D.AddForce(new Vector2(0, 100));
-        }
-        */
-        rb2D.velocity = new Vector2(x, 0);
+        
+     
+        
+        rb2D.velocity = new Vector2(x, rb2D.velocity.y);
 
 
 

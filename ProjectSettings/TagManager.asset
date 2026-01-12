@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - monster
+  - ground
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - background
   - Water
   - UI
   - 
@@ -39,6 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 1660970545
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
