@@ -10,6 +10,7 @@ public class playerdamage : MonoBehaviour
     public HeartSystem heartSystem;
     private bool canDmg = true;
     private SpriteRenderer spriteRenderer;
+    public BoxCollider2D box;
 
 
     void Start()
@@ -29,6 +30,11 @@ public class playerdamage : MonoBehaviour
 
         }
     }
+    public void missing() {
+        canDmg = false;
+        box.isTrigger = true;
+    StartCoroutine("Invincibility");
+    }
     IEnumerator Invincibility()
     {
         for (int i = 0; i < 10f; i++)
@@ -40,6 +46,7 @@ public class playerdamage : MonoBehaviour
 
         }
         canDmg = true;
+        box.isTrigger = false;
         yield return null;
     }
 }
