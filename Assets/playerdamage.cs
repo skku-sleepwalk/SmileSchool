@@ -39,10 +39,12 @@ public class playerdamage : MonoBehaviour
     {
         for (int i = 0; i < 10f; i++)
         {
+            spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
+            yield return new WaitForSeconds(0.1f);
             spriteRenderer.color = new Color(1f, 1f, 1f, 0f);
             yield return new WaitForSeconds(0.1f);
             spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
-            yield return new WaitForSeconds(0.1f);
+
 
         }
         canDmg = true;

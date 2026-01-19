@@ -6,7 +6,8 @@ public class HeartReset : MonoBehaviour
 {
     public HeartSystem heartSystem;
     public void Reset()
-    {
+    {   
+        
         heartSystem.RegenHeart(5);
     }
 }
