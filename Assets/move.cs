@@ -9,11 +9,13 @@ public class move : MonoBehaviour
     public float speed = 5;
     bool flip = false;
     Rigidbody2D rb2D;
+    Transform Pos;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        Pos = transform;
     }
 
     // Update is called once per frame
@@ -21,14 +23,23 @@ public class move : MonoBehaviour
     {
         x = 0;
         y = 0;
-        if (Input.GetKey("right"))
-        {
-            x += speed;
-        }
-        else if (Input.GetKey("left"))
-        {
-            x -= speed;
 
+        if (Pos.position.x < 11.30851)
+        {
+            if (Input.GetKey("right"))
+            {
+                
+                x += speed;
+            }
+        }
+
+        if (Pos.position.x > -8.127645)   
+        {
+            if (Input.GetKey("left"))
+            {
+                x -= speed;
+
+            }
         }
         
      
