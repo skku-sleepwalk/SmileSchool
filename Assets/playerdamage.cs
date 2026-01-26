@@ -22,9 +22,11 @@ public class playerdamage : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("health: " + health);
+
         if (collision.gameObject.CompareTag("monster")&&canDmg) 
         {
             canDmg = false;
+            box.isTrigger = true;
             heartSystem.GetDamage(1);
             StartCoroutine("Invincibility");
 
