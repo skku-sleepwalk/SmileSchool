@@ -14,7 +14,7 @@ public class kill : MonoBehaviour
     {
         Vector2 origin = Character.position;
         RaycastHit2D hit = Physics2D.Raycast(origin, direction, distance);
-        Debug.Log(hit.collider.gameObject);
+       
         if (hit.collider.gameObject.tag == "monster")
         {
             Destroy(hit.collider.gameObject);
