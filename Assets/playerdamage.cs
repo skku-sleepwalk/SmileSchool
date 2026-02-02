@@ -11,7 +11,7 @@ public class playerdamage : MonoBehaviour
     private bool canDmg = true;
     private SpriteRenderer spriteRenderer;
     public BoxCollider2D box;
-
+    private bool isCool = false;
 
     void Start()
     {
@@ -33,9 +33,15 @@ public class playerdamage : MonoBehaviour
         }
     }
     public void missing() {
-        canDmg = false;
-        box.isTrigger = true;
-    StartCoroutine("Invincibility");
+        if (isCool == false) {
+            isCool = true;
+
+
+            canDmg = false;
+            box.isTrigger = true;
+            StartCoroutine("Invincibility");
+            StartCoroutine("iscool");
+        }
     }
     IEnumerator Invincibility()
     {
@@ -46,12 +52,21 @@ public class playerdamage : MonoBehaviour
             spriteRenderer.color = new Color(1f, 1f, 1f, 0f);
             yield return new WaitForSeconds(0.1f);
             spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
-
-
         }
-        canDmg = true;
+        
+
+
+
+
+
+                canDmg = true;
         box.isTrigger = false;
         yield return null;
+    }
+    IEnumerator iscool()
+    {
+        yield return new WaitForSeconds(5f);
+        isCool = false;
     }
 }
 
