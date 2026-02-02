@@ -41,10 +41,14 @@ public class move : MonoBehaviour
 
             }
         }
-        
-     
-        
-        rb2D.velocity = new Vector2(x, rb2D.velocity.y);
+        else
+        {
+            Pos.position = new Vector2(-8.127645f, Pos.position.y);
+        }
+
+
+
+            rb2D.velocity = new Vector2(x, rb2D.velocity.y);
 
 
 
