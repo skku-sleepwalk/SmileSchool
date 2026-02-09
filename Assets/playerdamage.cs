@@ -1,6 +1,7 @@
 using System.Linq;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class playerdamage : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class playerdamage : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public BoxCollider2D box;
     private bool isCool = false;
+    public Button bt;
 
     void Start()
     {
@@ -35,9 +37,11 @@ public class playerdamage : MonoBehaviour
     public void missing() {
         if (isCool == false) {
             isCool = true;
-
-
             canDmg = false;
+            ColorBlock colorBlock = bt.colors;
+            colorBlock.selectedColor = new Color(150f/255f, 150f / 255f, 150f / 255f, 255f / 255f);
+            bt.colors = colorBlock;
+            Debug.Log(colorBlock.normalColor);
             box.isTrigger = true;
             StartCoroutine("Invincibility");
             StartCoroutine("iscool");
@@ -66,6 +70,10 @@ public class playerdamage : MonoBehaviour
     IEnumerator iscool()
     {
         yield return new WaitForSeconds(5f);
+        ColorBlock colorBlock = bt.colors;
+
+        colorBlock.selectedColor = new Color(1f, 1f, 1f, 1f);
+        bt.colors = colorBlock;
         isCool = false;
     }
 }
