@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class kill : MonoBehaviour
 {
@@ -47,11 +48,8 @@ public class kill : MonoBehaviour
             Debug.Log("利阑 磷看促!");
         }
     }
+ 
     
-    //Destroy(Monster);
-        }
-        Debug.Log("利阑 磷看促!");
-    }
     IEnumerator Invincibility()
     {
         yield return new WaitForSeconds(1f);
