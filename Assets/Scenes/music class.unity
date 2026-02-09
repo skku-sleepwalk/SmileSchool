@@ -277,6 +277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Character: {fileID: 870332779}
+  SceneList: []
 --- !u!114 &139205746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1414,6 +1415,7 @@ MonoBehaviour:
   location: 0
   heartSystem: {fileID: 772098835}
   box: {fileID: 870332777}
+  bt: {fileID: 0}
 --- !u!50 &870332776
 Rigidbody2D:
   serializedVersion: 4
@@ -2233,6 +2235,10 @@ PrefabInstance:
     - target: {fileID: 8973926060503523729, guid: 80f730a95b1305e41bf9ed2f643b6603, type: 3}
       propertyPath: m_Name
       value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 8973926060503523731, guid: 80f730a95b1305e41bf9ed2f643b6603, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8973926060503523732, guid: 80f730a95b1305e41bf9ed2f643b6603, type: 3}
       propertyPath: m_RootOrder
