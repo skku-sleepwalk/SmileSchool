@@ -18,9 +18,25 @@ public class monsterspon : MonoBehaviour
 
             // 오브젝트풀 에서 빌려오기
             timer = 0;
-            var bulletGo = pool.instance.Pool.Get();
+            int rnd=Random.Range(0, 2);
+            if (rnd == 0)
+            {
+                var bulletGo = pool.instance.Pool.Get();
+                bulletGo.transform.position = gameObject.transform.position;
 
-            bulletGo.transform.position = gameObject.transform.position;
+            }
+            else
+            {
+                var bulletGo1 = pool1.instance.Pool.Get();
+                bulletGo1.transform.position = gameObject.transform.position;
+                var bulletGo2 = pool1.instance.Pool.Get();
+                bulletGo2.transform.position = new Vector2(gameObject.transform.position.x+3, gameObject.transform.position.y);
+                var bulletGo3 = pool1.instance.Pool.Get();
+                bulletGo3.transform.position = new Vector2(gameObject.transform.position.x+6, gameObject.transform.position.y);
+
+            }
+
+
         }
 
         // 가로 이동 반환값 : LeftArrow = -1 RightArrow = 1

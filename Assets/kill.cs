@@ -15,7 +15,7 @@ public class kill : MonoBehaviour
     public List<string> SceneList = new List<string>();
     int index = 0;
     public SpriteRenderer sq;
-    public Button bt;
+     Button bt;
     public void Start()
     {
         bt = GetComponent<Button>();

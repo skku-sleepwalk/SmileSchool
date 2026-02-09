@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7340931558302489838}
   - component: {fileID: 7340931558302489834}
   - component: {fileID: 7340931558302489835}
+  - component: {fileID: 8884218968304864846}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: Untagged
@@ -143,3 +144,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   bulletSpawnPoint: {fileID: 0}
+--- !u!114 &8884218968304864846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7340931558302489837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c5b11db2d85cb4db66160361042fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCapacity: 10
+  maxPoolSize: 15
+  bulletPrefab: {fileID: 8973926060503523729, guid: dff5865b745f2d14b9f9bb9cdd235329, type: 3}
