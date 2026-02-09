@@ -1498,6 +1498,7 @@ MonoBehaviour:
   location: 0
   heartSystem: {fileID: 772098835}
   box: {fileID: 870332777}
+  bt: {fileID: 463611492}
 --- !u!50 &870332776
 Rigidbody2D:
   serializedVersion: 4
