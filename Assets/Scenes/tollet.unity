@@ -277,7 +277,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Character: {fileID: 870332779}
-  SceneList: []
+  SceneList:
+  - out
+  - playground
+  - music class
+  - tollet
+  - gym
+  - class
+  - sampleScene
+  - school_out
+  - out
 --- !u!114 &139205746
 MonoBehaviour:
   m_ObjectHideFlags: 0

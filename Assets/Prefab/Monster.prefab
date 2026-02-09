@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8973926060503523731}
   - component: {fileID: 8973926060503523730}
   - component: {fileID: 8973926060503523733}
+  - component: {fileID: 9130883687110123905}
   m_Layer: 0
   m_Name: Monster
   m_TagString: monster
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 283c4c3582c90014fb8e0eb8c7154ddf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -125,3 +126,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+--- !u!114 &9130883687110123905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973926060503523729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce177b460c328344af8002ba6865347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 283c4c3582c90014fb8e0eb8c7154ddf, type: 3}
+  - {fileID: -1464419098, guid: 430e22cfea6fc9c42a7c9fbe7960872c, type: 3}
+  - {fileID: 917728764, guid: d9492bbda7205504c8e92febaaf22aca, type: 3}
+  - {fileID: -302095644, guid: 91642cc0f5f44634abb9f718a2999c70, type: 3}
+  - {fileID: -57676978, guid: 81be7bae1ce42544b98e1b9234e0d384, type: 3}
+  - {fileID: 21300000, guid: 283c4c3582c90014fb8e0eb8c7154ddf, type: 3}
+  - {fileID: -365171359, guid: 1f29086fae4cc634a8510442194fd77c, type: 3}
+  - {fileID: 951393647, guid: bcbcb7df7fe223f4b8e66a117d74b15b, type: 3}

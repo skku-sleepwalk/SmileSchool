@@ -13,7 +13,7 @@ EditorBuildSettings:
     guid: ba4d5f2691ed5f0488a0953612ff2246
   - enabled: 1
     path: Assets/Scenes/music class.unity
-    guid: 89d84a0686e700f4d84a4d0498e8e05f
+    guid: fd3f753156381d544a6cea52e6c11665
   - enabled: 1
     path: Assets/Scenes/tollet.unity
     guid: 1427b0184dfa90a46b0563d3e4f59e0a
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/school_out.unity
+    guid: 89d84a0686e700f4d84a4d0498e8e05f
   m_configObjects: {}

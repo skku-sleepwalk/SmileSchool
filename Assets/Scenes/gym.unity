@@ -277,6 +277,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Character: {fileID: 870332779}
+  SceneList:
+  - out
+  - playground
+  - music class
+  - tollet
+  - gym
+  - class
+  - sampleScene
+  - school_out
+  - out
 --- !u!114 &139205746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1498,6 +1508,7 @@ MonoBehaviour:
   location: 0
   heartSystem: {fileID: 772098835}
   box: {fileID: 870332777}
+  bt: {fileID: 0}
 --- !u!50 &870332776
 Rigidbody2D:
   serializedVersion: 4
@@ -1585,7 +1596,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 09eb99b18d4b83a479570971177c6eed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
